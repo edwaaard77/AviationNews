@@ -10,8 +10,5 @@ COPY . .
 # Устанавливаем зависимости из requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Открываем порт, если бот работает с внешними соединениями (например, вебхуки)
-EXPOSE 8081
-
 # Указываем команду для запуска бота
 CMD ["python3", "main.py"]
